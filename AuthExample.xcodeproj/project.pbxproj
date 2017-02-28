@@ -14,6 +14,7 @@
 		E475F64D1E641EB600DBB678 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E475F64B1E641EB600DBB678 /* LaunchScreen.storyboard */; };
 		E475F6581E641EB700DBB678 /* AuthExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6571E641EB700DBB678 /* AuthExampleTests.swift */; };
 		E475F6631E641EB700DBB678 /* AuthExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6621E641EB700DBB678 /* AuthExampleUITests.swift */; };
+		E475F6711E6420FA00DBB678 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6701E6420FA00DBB678 /* Auth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		E475F65E1E641EB700DBB678 /* AuthExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AuthExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E475F6621E641EB700DBB678 /* AuthExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExampleUITests.swift; sourceTree = "<group>"; };
 		E475F6641E641EB700DBB678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E475F6701E6420FA00DBB678 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				E475F6491E641EB600DBB678 /* Assets.xcassets */,
 				E475F64B1E641EB600DBB678 /* LaunchScreen.storyboard */,
 				E475F64E1E641EB600DBB678 /* Info.plist */,
+				E475F6701E6420FA00DBB678 /* Auth.swift */,
 			);
 			path = AuthExample;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				E475F6451E641EB600DBB678 /* ViewController.swift in Sources */,
 				E475F6431E641EB600DBB678 /* AppDelegate.swift in Sources */,
+				E475F6711E6420FA00DBB678 /* Auth.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -507,6 +511,7 @@
 				E475F6691E641EB700DBB678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E475F66A1E641EB700DBB678 /* Build configuration list for PBXNativeTarget "AuthExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +520,7 @@
 				E475F66C1E641EB700DBB678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		E475F66D1E641EB700DBB678 /* Build configuration list for PBXNativeTarget "AuthExampleUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +529,7 @@
 				E475F66F1E641EB700DBB678 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
