@@ -15,6 +15,8 @@
 		E475F6581E641EB700DBB678 /* AuthExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6571E641EB700DBB678 /* AuthExampleTests.swift */; };
 		E475F6631E641EB700DBB678 /* AuthExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6621E641EB700DBB678 /* AuthExampleUITests.swift */; };
 		E475F6711E6420FA00DBB678 /* Auth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6701E6420FA00DBB678 /* Auth.swift */; };
+		E475F6731E65C7ED00DBB678 /* Auth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6721E65C7ED00DBB678 /* Auth2.swift */; };
+		E475F6741E65E62C00DBB678 /* Auth2.swift in Sources */ = {isa = PBXBuildFile; fileRef = E475F6721E65C7ED00DBB678 /* Auth2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,7 @@
 		E475F6621E641EB700DBB678 /* AuthExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthExampleUITests.swift; sourceTree = "<group>"; };
 		E475F6641E641EB700DBB678 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E475F6701E6420FA00DBB678 /* Auth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth.swift; sourceTree = "<group>"; };
+		E475F6721E65C7ED00DBB678 /* Auth2.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Auth2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,7 @@
 				E475F64B1E641EB600DBB678 /* LaunchScreen.storyboard */,
 				E475F64E1E641EB600DBB678 /* Info.plist */,
 				E475F6701E6420FA00DBB678 /* Auth.swift */,
+				E475F6721E65C7ED00DBB678 /* Auth2.swift */,
 			);
 			path = AuthExample;
 			sourceTree = "<group>";
@@ -263,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E475F6451E641EB600DBB678 /* ViewController.swift in Sources */,
+				E475F6731E65C7ED00DBB678 /* Auth2.swift in Sources */,
 				E475F6431E641EB600DBB678 /* AppDelegate.swift in Sources */,
 				E475F6711E6420FA00DBB678 /* Auth.swift in Sources */,
 			);
@@ -272,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E475F6741E65E62C00DBB678 /* Auth2.swift in Sources */,
 				E475F6581E641EB700DBB678 /* AuthExampleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -8,7 +8,7 @@
 
 import Foundation
 
-typealias NResponse = (data:Data?, response:HTTPURLResponse?, error:Error?)
+// MARK: Basic Authentication handled by user
 func basicAuth(username:String , password:String, completion: @escaping (_ result: NResponse) -> Void){
     let loginString = String(format: "%@:%@", username, password)
     let loginData = loginString.data(using: String.Encoding.utf8)!
@@ -28,6 +28,9 @@ func basicAuth(username:String , password:String, completion: @escaping (_ resul
     
 }
 
+// MARK: Digest Authentication handled by user is ridiculously complex for implement by user you may check example PHP code from https://gist.github.com/funkatron/949952
+
+
 func getJson(data:Data) throws -> [String: Any] {
     do {
         let json = try JSONSerialization.jsonObject(with: data, options: [])
@@ -36,12 +39,3 @@ func getJson(data:Data) throws -> [String: Any] {
         throw error
     }
 }
-
-//if let unwrappedData = resp.0{
-//    do{
-//        
-//        let json = try JSONSerialization.jsonObject(with: unwrappedData, options: [])
-//    }catch let error{
-//        print (error)
-//    }
-//}
