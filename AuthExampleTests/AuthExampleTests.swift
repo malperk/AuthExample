@@ -15,12 +15,29 @@ class AuthExampleTests: XCTestCase {
     func testBasicAuthentication() {
         let expectation = self.expectation(description: "Basic Authentication request should succeed")
         basicAuth(username: "user", password: "passwd") { (resp) in
+            XCTAssertNotNil(resp)
+            XCTAssertNotNil(resp.response)
             XCTAssertEqual(resp.response?.statusCode, 200)
             XCTAssertNotNil(resp.data)
-            let json = try? getJson(data: resp.data!)
-            XCTAssertNotNil(json)
-            let authenticated = json?["authenticated"] as! Bool
-            XCTAssert(authenticated)
+            if let unwrappedData = resp.data{
+                let json = try? getJson(data: unwrappedData)
+                XCTAssertNotNil(json)
+                if let unwrappedJson = json {
+                    let authenticated = unwrappedJson["authenticated"] as! Bool
+                    XCTAssert(authenticated)
+                }
+            }
+            expectation.fulfill()
+        }
+        waitForExpectations(timeout: timeout, handler: nil)
+    }
+    
+    func testBasicAuthenticationFail() {
+        let expectation = self.expectation(description: "Basic Authentication request should fail")
+        basicAuth(username: "user", password: "wrong") { (resp) in
+            XCTAssertNotNil(resp)
+            XCTAssertNotNil(resp.response)
+            XCTAssertEqual(resp.response?.statusCode, 401)
             expectation.fulfill()
         }
         waitForExpectations(timeout: timeout, handler: nil)
